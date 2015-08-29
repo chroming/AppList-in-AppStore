@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import requests
 import re
-#用于抓取AppStore应用列表和ID
+#get AppStore application name and ID list
 
 
 def GetAppList(ListUrl):
