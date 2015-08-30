@@ -50,7 +50,7 @@ def info(c):
             AppName = GetValue(AppInfo,'trackCensoredName')
             rate = GetValue(AppInfo,'averageUserRating')
             ratenumber = GetValue(AppInfo,'userRatingCount')
-            print(AppName+"#"+version+"#"+releaseDate+"#"+OSrequests+"#"+filesize+"#"+auther+"#"+str(price)+"#"+rate+"#"+ratenumber)
+            print(AppName+"#"+version+"#"+releaseDate+"#"+OSrequests+"#"+filesize+"#"+auther+"#"+str(price)+"#"+str(rate)+"#"+str(ratenumber))
 
                     
 #多进程函数
