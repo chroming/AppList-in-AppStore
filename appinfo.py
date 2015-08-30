@@ -16,8 +16,11 @@ def GetValue(ValueName):
 for id in idlist:
     AppID = id[0:9]
     AppURL = 'https://itunes.apple.com/cn/lookup?id='+AppID
-    AppInfoHtml = requests.get(AppURL).text
-    AppInfo = json.loads(AppInfoHtml)
+    try:
+        AppInfoHtml = requests.get(AppURL,timeout=10).text
+        AppInfo = json.loads(AppInfoHtml)
+    except:
+            AppInfo = {'resultCount':'0'}
     if AppInfo['resultCount'] == 1:
 
         describe = GetValue('description')
