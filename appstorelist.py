@@ -12,7 +12,7 @@ def GetAppList(ListUrl):
 		print(AppID[0]+" "+AppID[1])
 		
 
-GetAllList = requests.get('https://itunes.apple.com/cn/genre/mac-shang-wu/id12001').text
+GetAllList = requests.get('https://itunes.apple.com/cn/genre/mac-you-xi-dong-zuo/id12201?mt=12').text
 #print GetAllList
 GetCla = re.findall('genre-nav(.*?)\/div\>',GetAllList,re.S)[0]
 GetClass = re.findall('(https\:\/\/itunes\.apple\.com\/cn\/genre\/mac.*?)\"',GetCla,re.S)
