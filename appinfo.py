@@ -28,6 +28,8 @@ for id in idlist:
         releaseDate = GetValue('releaseDate')[0:10]
         OSrequests = GetValue('minimumOsVersion')
         AppName = GetValue('trackCensoredName')
+        rate = GetValue(AppInfo,'averageUserRating')
+        ratenumber = GetValue(AppInfo,'userRatingCount')
         print(AppName)
         print(price)
 
