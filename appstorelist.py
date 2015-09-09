@@ -18,6 +18,7 @@ GetCla = re.findall('genre-nav(.*?)\/div\>',GetAllList,re.S)[0]
 GetClass = re.findall('(https\:\/\/itunes\.apple\.com\/cn\/genre\/mac.*?)\"',GetCla,re.S)
 for AppClassUrl in GetClass:
 	#print AppClassUrl
-	for word in ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','*']:
-		ListUrl = AppClassUrl+"&letter="+word
-		GetAppList(ListUrl)
+	if AppClassUrl != 'https://itunes.apple.com/cn/genre/mac-you-xi/id12006?mt=12'
+		for word in ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','*']:
+			ListUrl = AppClassUrl+"&letter="+word
+			GetAppList(ListUrl)
